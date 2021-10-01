@@ -2,7 +2,7 @@
   "name": "clippy-check",
   "version": "0.1.0",
   "description": "\"GitHub Action for PR annotations with clippy checks\"",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest --passWithNoTests"
   },
