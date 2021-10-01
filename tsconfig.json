@@ -23,7 +23,7 @@
         "strict": true,
         "strictPropertyInitialization": false,
         "suppressImplicitAnyIndexErrors": false,
-        "target": "es2021"
+        "target": "es2021",
     },
     "include": [
         "src/**/*"

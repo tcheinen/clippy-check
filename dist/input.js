@@ -27,11 +27,11 @@ const string_argv_1 = __importDefault(require("string-argv"));
 const core = __importStar(require("@actions/core"));
 function get() {
     const token = core.getInput('token', { required: true });
-    const options = (0, string_argv_1.default)(core.getInput('options', { required: false }));
-    const warn = (0, string_argv_1.default)(core.getInput('warn', { required: false }));
-    const allow = (0, string_argv_1.default)(core.getInput('allow', { required: false }));
-    const deny = (0, string_argv_1.default)(core.getInput('deny', { required: false }));
-    const forbid = (0, string_argv_1.default)(core.getInput('forbid', { required: false }));
+    const options = string_argv_1.default(core.getInput('options', { required: false }));
+    const warn = string_argv_1.default(core.getInput('warn', { required: false }));
+    const allow = string_argv_1.default(core.getInput('allow', { required: false }));
+    const deny = string_argv_1.default(core.getInput('deny', { required: false }));
+    const forbid = string_argv_1.default(core.getInput('forbid', { required: false }));
     const name = core.getInput('name', { required: false });
     return {
         token,

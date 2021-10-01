@@ -218,19 +218,19 @@ See https://github.com/actions-rs/clippy-check/issues/2 for details.`);
     getSummary() {
         let blocks = [];
         if (this.stats.ice > 0) {
-            blocks.push(`${this.stats.ice} internal compiler error${(0, render_1.plural)(this.stats.ice)}`);
+            blocks.push(`${this.stats.ice} internal compiler error${render_1.plural(this.stats.ice)}`);
         }
         if (this.stats.error > 0) {
-            blocks.push(`${this.stats.error} error${(0, render_1.plural)(this.stats.error)}`);
+            blocks.push(`${this.stats.error} error${render_1.plural(this.stats.error)}`);
         }
         if (this.stats.warning > 0) {
-            blocks.push(`${this.stats.warning} warning${(0, render_1.plural)(this.stats.warning)}`);
+            blocks.push(`${this.stats.warning} warning${render_1.plural(this.stats.warning)}`);
         }
         if (this.stats.note > 0) {
-            blocks.push(`${this.stats.note} note${(0, render_1.plural)(this.stats.note)}`);
+            blocks.push(`${this.stats.note} note${render_1.plural(this.stats.note)}`);
         }
         if (this.stats.help > 0) {
-            blocks.push(`${this.stats.help} help message${(0, render_1.plural)(this.stats.help)}`);
+            blocks.push(`${this.stats.help} help message${render_1.plural(this.stats.help)}`);
         }
         return blocks.join(', ');
     }
