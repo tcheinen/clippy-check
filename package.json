@@ -2,7 +2,7 @@
   "name": "clippy-check",
   "version": "0.1.0",
   "description": "\"GitHub Action for PR annotations with clippy checks\"",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write **/*.ts",
